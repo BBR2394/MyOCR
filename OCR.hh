@@ -2,6 +2,7 @@
 # define OCR_HH_
 
 # include <iostream>
+# include "LoadFile.hh"
 
 class OCR
 {
@@ -10,7 +11,9 @@ public:
 	~OCR();
 
 private:
-	int _toto;
+	int 		_toto;
+	LoadFile *	_ldFile;
+
 
 public:
 	int work();

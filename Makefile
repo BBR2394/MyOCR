@@ -1,7 +1,8 @@
 CXX	=	clang++
 
 SRC	=	main.cpp	\
-		OCR.cpp		
+		OCR.cpp		\
+		LoadFile.cpp
 
 OBJ	=	$(SRC:.cpp=.o)
 
