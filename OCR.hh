@@ -3,6 +3,7 @@
 
 # include <iostream>
 # include "LoadFile.hh"
+# include "Alphabet.hh"
 
 class OCR
 {
@@ -13,7 +14,7 @@ public:
 private:
 	int 		_toto;
 	LoadFile *	_ldFile;
-
+	Alphabet	_alphabet;
 
 public:
 	int work();
