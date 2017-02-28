@@ -19,6 +19,7 @@ private:
 
 public:
 	std::string getCorespondingLetter() const;
+	std::string getLetter() const;
 
 };
 

@@ -5,6 +5,9 @@
 #include <fstream>		// ifstream
 #include <string>
 
+#include "IDocument.hh"
+#include "PNGFIle.hh"
+
 class LoadFile
 {
 public:
@@ -15,9 +18,10 @@ private:
 	unsigned char * _file;
 	int 			_fdFile;
 	std::ifstream	_theFile;
+	IDocument *_theDoc;
 
 public:
-	int openTheFile(std::string );
+	int openTheFile(char * );
 	int loadTheFile();
 };
 

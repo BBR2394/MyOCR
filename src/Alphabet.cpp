@@ -34,9 +34,25 @@ int Alphabet::loadAlphabet(std::string fileName)
 
 	for (int i = 0; i < length; i++)
 	{
-		letter = new Letter(buf[length]);
+		letter = new Letter(buf[i]);
 		_alphabetLst.push_back(letter);
 	}
 	std::cout << "size of the list " << _alphabetLst.size() << std::endl;
     return 0;
+}
+
+/*
+** a faire en mode surchage de l'operateur <<
+*/
+int Alphabet::printAlphabet()
+{
+	Letter *temp;
+
+	std::cout << "size of the alphabet " << _alphabetLst.size() << std::endl;
+	for (std::list<Letter *>::iterator it=_alphabetLst.begin(); it != _alphabetLst.end(); ++it)
+	{
+    	temp = *it;
+    	std::cout << ' "' << temp->getLetter() << '" ';
+	}
+	std::cout << std::endl;
 }

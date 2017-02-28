@@ -18,7 +18,7 @@ private:
 
 public:
 	int work();
-
+	int isEverythingOK();
 };
 
 #endif

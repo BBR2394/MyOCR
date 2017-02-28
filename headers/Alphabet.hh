@@ -20,6 +20,7 @@ private:
 	
 public:
 	int loadAlphabet(std::string);
+	int printAlphabet();
 };
 
 #endif
